@@ -1,5 +1,5 @@
 <?php
-// ================== CLASSE BASE ==================
+//  CLASSE BASE
 class Objeto {
     protected float $largura;
     protected float $altura;
@@ -10,15 +10,14 @@ class Objeto {
     }
 
     public function calculaArea(): float {
-        return 0.0; // Implementação genérica
-    }
+        return 0.0; 
 
     public function exibirDimensoes(): void {
         echo "Largura: {$this->largura}, Altura: {$this->altura}\n";
     }
 }
 
-// ================== CLASSE TRIÂNGULO ==================
+// CLASSE TRIÂNGULO
 class Triangulo extends Objeto {
 
     public function __construct(float $largura, float $altura) {
@@ -36,7 +35,7 @@ class Triangulo extends Objeto {
     }
 }
 
-// ================== CLASSE RETÂNGULO ==================
+//  CLASSE RETÂNGULO 
 class Retangulo extends Objeto {
     public function __construct(float $largura, float $altura) {
         parent::__construct($largura, $altura);
@@ -58,7 +57,7 @@ class Retangulo extends Objeto {
     }
 }
 
-// ================== MENU INTERATIVO ==================
+// MENU 
 do {
     echo "\n===== MENU =====\n";
     echo "1 - Cadastrar Triângulo\n";
